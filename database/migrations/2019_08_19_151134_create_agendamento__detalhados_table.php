@@ -14,7 +14,7 @@ class CreateAgendamentoDetalhadosTable extends Migration
     public function up()
     {
         Schema::create('agendamento__detalhados', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table->integer('agendamento_id')->unsigned();
             $table->foreign('agendamento_id')
                 ->references('id')

@@ -14,11 +14,11 @@ class CreateExamePrecosTable extends Migration
     public function up()
     {
         Schema::create('exame__precos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table->string('valor');
-            $table->inti('convenio_id')->unsigned();
+            $table->integer('convenio_id')->unsigned();
             $table->foreign('convenio_id')->references('id')->on('convenios')->onDelete('cascade');
-            $table->inti('exame_id')->unsigned();
+            $table->integer('exame_id')->unsigned();
             $table->foreign('exame_id')->references('id')->on('exames')->onDelete('cascade');
             $table->timestamps();
         });

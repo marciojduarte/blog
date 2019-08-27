@@ -14,7 +14,7 @@ class CreateAgendamentosTable extends Migration
     public function up()
     {
         Schema::create('agendamentos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table->integer('paciente_id')->unsigned();
             $table->foreign('paciente_id')
                 ->references('id')
