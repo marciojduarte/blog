@@ -13,7 +13,7 @@ class controladorExamesPreco extends Controller
      */
     public function index()
     {
-        //
+        return view ('examespreco');
     }
 
     /**

@@ -13,7 +13,7 @@ class controladorAgendamentoDetalhado extends Controller
      */
     public function index()
     {
-        //
+        return view ('agendamentodetalhado');
     }
 
     /**
