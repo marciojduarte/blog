@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/paciente', 'ControladorPaciente@index')->name('paciente');
+Route::get('/solicitante', 'ControladorSolicitante@index')->name('solicitante');
+Route::get('/agendamento', 'ControladorAgendamento@index')->name('agendamento');
+Route::get('/agendamentoDetalhado', 'ControladorAgendamentoDetalhado@index')->name('agendamentodetalhado');
+Route::get('/exames', 'ControladorExames@index')->name('exames');
+Route::get('/examesPrecos', 'ControladorExamesPrecos@index')->name('examesprecos');
+
+
